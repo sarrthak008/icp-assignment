@@ -1,13 +1,82 @@
+
+@font-face {
+    font-family: gilyRoy;
+    src: url(./Gilroy-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: gilyRoy;
+}
+
+body{
     background-color: #000;
 }
 
 nav{
     height: 10vh;
     width: 100vw;
-    border-bottom: 0.1px solid white;
-    background-color: rgba(255, 255, 255, 0.758);
+    display: flex;
+    padding: 0 5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav #left{
+    height: 100%;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+}
+
+#left img{
+    height: 70%;
+    width: 100%;
+    object-fit: fill;
+    filter: drop-shadow(10px 20px 40px rgb(141, 141, 249));
+}
+
+
+nav #right{
+ height: 100%;
+ width: 40vw;
+}
+
+#right ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+
+ul li{
+    list-style:none;
+    padding: 0.5vh 1vw;
+    border-radius: 4px;
+    transition: all .4s linear;
+    box-shadow: 20px 10px 60px  rgb(2, 2, 255);
+    background: linear-gradient(to right,rgb(150, 150, 245),rgb(244, 43, 43));
+}
+
+ul li:hover{
+    box-shadow: 20px 10px 60px  rgb(255, 2, 2);
+    background: linear-gradient(to left,rgb(150, 150, 245),rgb(244, 43, 43));
+  
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.2vw;  
+    transition: all .4s linear;
+}
+
+ul li a:hover{
+    text-decoration: underline;
 }
