@@ -70,7 +70,7 @@ nav ul li{
 }
 
 #cofee-div img{
-    position: static;
+    position: sticky;
     height: 80%;
     filter: drop-shadow(10px 10px 60px gray);
 }
@@ -104,8 +104,6 @@ nav ul li{
     font-size: 1.2vw;
     color: gray;
 }
-
-
 
 
 #book{
