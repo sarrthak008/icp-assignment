@@ -191,3 +191,48 @@ h4{
 }
 
 }
+
+
+@media screen and (min-width: 490px) and (max-width: 768px){
+
+    
+    h3{
+        font-size: 3vw;
+    }
+    
+    h4{
+        font-size: 2.2vw;
+    }
+    
+    
+    .headers{
+        font-size: 2.2vw;
+    }
+    
+
+
+}
+
+
+@media screen and (min-width:769px) and (max-width: 992px) {
+        
+
+#sign{
+    height: 15vh;
+    width: 20vw;
+}
+
+
+}
+
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+ 
+    #sign{
+        height: 10vh;
+        width: 20vw;
+    }
+    
+
+
+}
