@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else ladder</title>
+</head>
+<body>
+    <script>
+           
+            let totalAmount = parseInt(prompt("ENTER YOUR TOTAL AMOUNT: "));
+            
+              let discountAmount = 0;
+              let finalAmount =totalAmount;
+
+            if(totalAmount>=1000){
+                 discountAmount = totalAmount / 10;
+                 finalAmount = totalAmount - discountAmount;
+                console.log(`hey your bill is ${totalAmount} ! you get 10% off now your bill is ${finalAmount}`)
+           
+            }else if(totalAmount <1000 && totalAmount >=500){
+
+                discountAmount = totalAmount / 5;
+                 finalAmount = totalAmount - discountAmount;
+                console.log(`hey your bill is ${totalAmount} ! you get 5% off now your bill is ${finalAmount}`)
+
+            }else{
+
+                console.log(`please pay ${finalAmount}`)
+            }
+            
+
+
+    </script>
+</body>
+</html>
