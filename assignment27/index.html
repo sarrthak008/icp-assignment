@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{ 
+            height: 100vh;
+            width: 100vw;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 3vh;
+         }
+
+         div{
+            height: 40vh;
+            width: 20vw;
+            background-color: gainsboro;
+         }
+    </style>
+</head>
+<body onload="contendLoad()">
+       <button onclick="clickBtn()">click me</button> 
+       <button ondblclick="dblClickBtn()">click me</button>
+       
+        <div onmouseover="mOver()" onmousemove="mMove()"></div>
+        
+
+      <script>
+          function clickBtn(){
+            document.write("you Click the button")
+          }
+
+          function dblClickBtn(){
+             document.write("you double click the button")
+          }
+
+          function mOver(){
+            alert("you over the mouse on div")
+          }
+
+          function mMove(){
+             alert("you move the mouse on a div")
+          }
+
+          function mLeave(){
+             alert("you leave the mouse on the div")
+          }
+   
+          function contendLoad(){
+             console.log("all body content load succesfully...")
+          }
+           
+           
+      </script>
+</body>
+</html>
