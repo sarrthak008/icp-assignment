@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dom manuplation -icp</title>
+</head>
+<body>
+     
+     <div id="card">
+         <h3>Auto Calculator</h3>
+         <input type="text" placeholder="enter the number" onkeyup="calculate()" id="num1">
+         <input type="text" placeholder="enter the number"  onkeyup="calculate()" id="num2">
+         <span id="ans-block">Let's  Calculate</span>
+     </div>
+
+
+      <script>
+          function calculate(){
+            
+            let num1 = parseInt( document.getElementById("num1").value)
+            let num2 = parseInt( document.getElementById("num2").value )
+            let sum = (num1 || 0 )+( num2 || 0)
+            
+            document.getElementById("ans-block").innerText =`Sum : ${sum}`
+            
+            
+          }
+      </script>
+</body>
+</html>
