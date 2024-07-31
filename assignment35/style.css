@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    font-size: 6vw;
+}
+
+h2 span{
+    background:linear-gradient(to left,blue ,rgb(249, 0, 0));
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+#inp{
+ width: 100vw;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 10vh;
+ margin-top: 5vh;
+}
+
+input{
+    height: 7vh;
+    width: 25vw;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    outline: none;
+    padding: 0 1vw;
+    border: 0.1px solid black;
+    border-right: none;
+    font-size: 1.3vw;
+    text-transform: capitalize;
+
+}
+
+button{
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border: 0.1px solid black;
+    border-left: none;
+    height: 7.2vh;
+    width: 6vw;
+    background-color: #5d5de9;
+    font-size: 2vw;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#result{
+    width: 30vw;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 5vh;
+    font-size: 2vw;
+    gap: 3vh;
+    text-align: justify;
+    justify-content: start;
+    margin:10vh auto;
+
+}
+
+#result h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+}
