@@ -21,3 +21,82 @@ html,body{
     text-align: center;
     font-size: 4em;
 }
+
+#main span{
+    display: block;
+    margin-top: 5vh;
+}
+
+#main input{
+    height: 6vh;
+    width: 20vw;
+    margin-left: 3vw;
+    border: none;
+    font-size: 1.2em;
+    padding-left: 1vw;
+    outline: none;
+}
+
+#main button{
+    height: 6vh;
+    font-size: 1.2em;
+    border: none;
+    width: 8vw;
+    background-color: #3838f3;
+    cursor: pointer;
+}
+
+#notes{
+    height: 70vh;
+    width: 90vw;
+    margin: auto;
+    margin-top: 5vh;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#notes::-webkit-scrollbar{
+    display: none;
+}
+.note{
+    height: 15vh;
+    width: 90%;
+    background-color: #4d4d4d;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 3vh;
+}
+
+.left{
+    height: 100%;
+    width: 15vw;
+    background-color: blue;
+    text-align: center;
+    font-size: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: none;
+}
+
+.right{
+    font-size: 2.4vw;
+    margin-left: 3vw;
+}
+
+.note span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+.note span i{
+    margin-right: 3vw;
+    cursor: pointer;
+}
